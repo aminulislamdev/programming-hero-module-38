@@ -4,7 +4,7 @@ import { mongodbAdapter } from "better-auth/adapters/mongodb";
 
 const mongoUri = process.env.BETTER_AUTH_DB_URL;
 const secret = process.env.BETTER_AUTH_SECRET;
-const baseURL = process.env.BETTER_AUTH_URL || "http://localhost:3000";
+const baseURL = process.env.BETTER_AUTH_URL || "https://acme-six-lilac.vercel.app";
 
 if (!mongoUri) throw new Error("BETTER_AUTH_DB_URL is not defined");
 if (!secret) throw new Error("BETTER_AUTH_SECRET is not defined");
